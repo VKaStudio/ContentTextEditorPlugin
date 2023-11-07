@@ -1,0 +1,43 @@
+th {
+    text-align: left;
+    border: 1px #000 solid;
+    padding: 5px 10px;
+}
+
+td {
+    border-left: 1px #444 solid;
+    border-bottom: 1px #444 dashed;
+    padding: 5px 10px;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+#test-plugin-search {
+    padding: 5px 10px;
+    background: #444;
+    color: #fff;
+}
+
+.output-alert {
+    padding: 10px 0;
+}
+
+.replace-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.replace-form input {
+    width: 150px;
+}
+
+.replace-form button {
+    background-color: #444;
+    color: #fff;
+}

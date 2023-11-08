@@ -19,13 +19,13 @@ add_action( 'plugins_loaded', function() {
 if(is_admin()) {
 
     define( 'DOMAIN', 'content-text-editor-plugin' );
-	define('PLUGIN_TEMPLATE_PATH', plugin_dir_path( __FILE__ ));
-	define('PLUGIN_TEMPLATE_URI', plugin_dir_url( __FILE__ ));
+    define( 'PLUGIN_TEMPLATE_PATH', plugin_dir_path( __FILE__ ) );
+    define( 'PLUGIN_TEMPLATE_URI', plugin_dir_url( __FILE__ ) );
 
     // Include class Search_and_replace
     include PLUGIN_TEMPLATE_PATH . 'classes/DataPresenter.php';
-	include PLUGIN_TEMPLATE_PATH . 'classes/SearchPosts.php';
-	include PLUGIN_TEMPLATE_PATH . 'classes/PostDataReplacer.php';
+    include PLUGIN_TEMPLATE_PATH . 'classes/SearchPosts.php';
+    include PLUGIN_TEMPLATE_PATH . 'classes/PostDataReplacer.php';
 
     // Include actions
     include PLUGIN_TEMPLATE_PATH . 'includes/actions.php';
